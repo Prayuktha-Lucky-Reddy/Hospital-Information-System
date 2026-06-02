@@ -2,6 +2,13 @@
 
 A comprehensive Hospital Management System (HMS) built with **React (Vite)** for the frontend and **Node.js (Express)** with **Oracle Database** for the backend.
 
+## Authors
+
+- Kartik Ramanuj
+- Prayuktha Lucky Reddy
+- Sana Tejasri
+- Parl Vaghasiya
+
 ##  Features
 
 - **Ward Management:** Real-time monitoring and management of hospital wards.
