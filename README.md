@@ -43,7 +43,7 @@ A comprehensive Hospital Management System (HMS) built with **React (Vite)** for
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/kartikramanuj/Hospital-Data-Management-system.git
+git clone https://github.com/Prayuktha-Lucky-Reddy/Hospital-Information-System
 cd Hospital-Data-Management-system
 ```
 
