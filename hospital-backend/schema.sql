@@ -19,7 +19,7 @@ CREATE TABLE DEPARTMENT (
     department_id   NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name            VARCHAR2(100) NOT NULL,
     location        VARCHAR2(100),
-    headdoctor_id   NUMBER REFERENCES DOCTOR(doctor_id)
+    headdoctor_id   NUMBER
 );
 
 
@@ -33,11 +33,16 @@ CREATE TABLE DOCTOR (
     phone            VARCHAR2(15),
     email            VARCHAR2(100),
     joining_date     DATE,
-    dept_id         NUMBER REFERENCES DEPARTMENT(department_id),
+    dept_id          NUMBER REFERENCES DEPARTMENT(department_id),
     gender           VARCHAR2(10),
     salary           NUMBER,
     consultation_fee NUMBER
 );
+-- add the remaining foreign key, seperately to avoid circular foreign key dependency
+    ALTER TABLE DEPARTMENT
+    ADD CONSTRAINT fk_department_head
+    FOREIGN KEY (headdoctor_id)
+    REFERENCES DOCTOR(doctor_id);
 
 -- 3. APPOINTMENT table
 CREATE TABLE APPOINTMENT (

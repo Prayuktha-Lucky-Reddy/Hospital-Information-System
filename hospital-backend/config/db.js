@@ -4,10 +4,10 @@ const oracledb = require('oracledb');
 
 
 const dbConfig = {
-  user: process.env.DB_USER || "HIS_USER",
-  password: process.env.DB_PASSWORD || "Kartik@2006",
+  user: process.env.DB_USER || "HOSP",
+  password: process.env.DB_PASSWORD || "password",
  connectString: process.env.DB_CONNECT_STRING || 
-`(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orclpdb)))`
+`(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=FREEPDB1)))`
 };
 
 async function executeQuery(sql, binds = [], opts = {}) {
