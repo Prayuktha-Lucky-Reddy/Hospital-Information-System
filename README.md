@@ -102,4 +102,4 @@ Hospital-Data-Management-system/
 Feel free to fork this project, report issues, or submit pull requests to improve the system!
 
 ##  License
-This project is licensed under the ISC License.
+This project is licensed under the MIT License.
